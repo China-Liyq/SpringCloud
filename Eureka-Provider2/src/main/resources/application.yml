@@ -1,0 +1,26 @@
+eureka:
+  client:
+#    register-with-eureka: true
+#    fetch-registry: true
+    service-url.defaultZone: "http://liyq:123@euk1.com:7001/eureka/"
+#    健康状态上传
+    healthcheck:
+      enabled: true
+  instance:
+    appname: prd
+    metadata-map.dalao: provider-chinaliyq
+server:
+  port: 81
+spring:
+  application:
+    name: provider
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    shutdown:
+      enabled: true
+
+

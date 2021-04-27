@@ -1,0 +1,31 @@
+eureka:
+  client:
+#    register-with-eureka: true
+#    fetch-registry: true
+    service-url.defaultZone: "http://liyq:123@euk1.com:7001/eureka/"
+  instance:
+    metadata-map.dalao: consumer-chinaliyq
+#    appname: consumer-0
+server:
+  port: 90
+spring:
+  application:
+    name: consumer
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    shutdown:
+      enabled: true
+
+provider:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
+
+
+#ribbon:
+#  eureka:
+#    enabled: false
+#ribbon.listOfServers: "localhost:80"

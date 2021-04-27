@@ -1,0 +1,9 @@
+eureka:
+  client:
+    service-url.defaultZone: "http://liyq:123@euk1.com:7001/eureka/"
+server:
+  port: 83
+
+spring:
+  application:
+    name: user-provider

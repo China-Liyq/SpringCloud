@@ -1,0 +1,16 @@
+eureka:
+  client:
+    service-url.defaultZone: http://euk1.com:7001/eureka/
+  instance:
+    metadata-map.dalao: server-chinaliyq
+    appname: euk1.com
+
+spring:
+  application:
+    name: Eureka-Server
+server:
+  port: 7001
+
+
+
+

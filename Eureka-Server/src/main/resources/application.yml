@@ -1,0 +1,23 @@
+eureka:
+  client:
+#    register-with-eureka: true
+#    fetch-registry: true
+    service-url.defaultZone: http://euk1.com:7001/eureka/
+  instance:
+#    hostname: euk1.com
+    metadata-map.dalao: server-chinaliyq
+    appname: euk1.com
+#    自我保护
+#  server:
+#    enable-self-preservation: false
+
+spring:
+  application:
+    name: Eureka-Server
+  security:
+    user:
+      name: "liyq"
+      password: "123"
+server:
+  port: 7001
+
